@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/clojure:lein-2.8.1
+
+    steps:
+      - checkout
+      - run: lein test
+
+workflows:
+  version: 2
+  test-then-deploy:
+    jobs:
+      - test
