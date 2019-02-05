@@ -1,4 +1,4 @@
-(defproject andreacrotti/semver "0.2.0"
+(defproject andreacrotti/semver "0.2.1"
   :description "Parser for semver specification"
   :url "http://github.com/andreacrotti/semver"
   :license {:name "Eclipse Public License"
