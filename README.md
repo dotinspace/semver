@@ -1,6 +1,8 @@
+*This is a fork of this project https://github.com/owainlewis/semver*
+
 # semver
 
-[![CircleCI](https://circleci.com/gh/owainlewis/semver.svg?style=svg)](https://circleci.com/gh/owainlewis/semver)
+[![CircleCI](https://circleci.com/gh/andreacrotti/semver.svg?style=svg)](https://circleci.com/gh/owainlewis/semver)
 
 A pure Clojure implementation of the Semantic Versioning spec.
 
@@ -10,9 +12,9 @@ http://semver.org
 
 ## Getting started
 
-https://clojars.org/io.forward/semver
+https://clojars.org/andreacrotti/semver
 
-[![Clojars Project](https://img.shields.io/clojars/v/io.forward/semver.svg)](https://clojars.org/io.forward/semver)
+[![Clojars Project](https://img.shields.io/clojars/v/andreacrotti/semver.svg)](https://clojars.org/andreacrotti/semver)
 
 ## Usage
 
