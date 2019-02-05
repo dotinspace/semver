@@ -2,7 +2,7 @@
 
 # semver
 
-[![CircleCI](https://circleci.com/gh/andreacrotti/semver.svg?style=svg)](https://circleci.com/gh/andreacrotti/semver)
+[![CircleCI](https://circleci.com/gh/AndreaCrotti/semver/tree/master.svg?style=svg)](https://circleci.com/gh/AndreaCrotti/semver/tree/master)
 
 A pure Clojure implementation of the Semantic Versioning spec.
 
