@@ -1,4 +1,4 @@
-(defproject io.forward/semver "0.1.0"
+(defproject io.forward/semver "0.2.0"
   :description "Parser for semver specification"
   :url "http://github.com/owainlewis/semver"
   :license {:name "Eclipse Public License"
