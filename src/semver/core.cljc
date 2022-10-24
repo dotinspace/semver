@@ -2,7 +2,7 @@
 
 (defrecord Version [major minor patch pre-release metadata])
 
-(def ^{:private true} semver
+(def ^:private semver
   #"^(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?$")
 
 (defn valid?
@@ -16,9 +16,12 @@
   [^String version]
   (when (valid? version)
     (let [[[_ major minor patch pre-release metadata]] (re-seq semver version)
-          major-version (Integer/parseInt major 10)
-          minor-version (Integer/parseInt minor 10)
-          patch-version (Integer/parseInt patch 10)]
+          major-version #?(:clj (Integer/parseInt major 10)
+                           :cljs (js/parseInt major 10))
+          minor-version #?(:clj (Integer/parseInt major 10)
+                           :cljs (js/parseInt major 10))
+          patch-version #?(:clj (Integer/parseInt major 10)
+                           :cljs (js/parseInt major 10))]
       (Version. major-version minor-version patch-version pre-release metadata))))
 
 (defn render
