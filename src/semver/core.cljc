@@ -1,4 +1,9 @@
-(ns semver.core)
+(ns semver.core
+  (:require 
+    #? (:cljs [goog.string :as gstring])
+    #? (:cljs [goog.string.format])))
+
+#? (:cljs (def format gstr/format))
 
 (defrecord Version [major minor patch pre-release metadata])
 
