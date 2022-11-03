@@ -1,6 +1,6 @@
 (ns semver.core
   (:require 
-    #? (:cljs [goog.string :as gstring])
+    #? (:cljs [goog.string :as gstr])
     #? (:cljs [goog.string.format])))
 
 #? (:cljs (def format gstr/format))
