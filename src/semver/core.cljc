@@ -1,5 +1,5 @@
 (ns semver.core
-  (:require 
+  (:require [clojure.string :as str]
     #? (:cljs [goog.string :as gstr])
     #? (:cljs [goog.string.format])))
 
