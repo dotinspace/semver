@@ -23,10 +23,10 @@
     (let [[[_ major minor patch pre-release metadata]] (re-seq semver version)
           major-version #?(:clj (Integer/parseInt major 10)
                            :cljs (js/parseInt major 10))
-          minor-version #?(:clj (Integer/parseInt major 10)
-                           :cljs (js/parseInt major 10))
-          patch-version #?(:clj (Integer/parseInt major 10)
-                           :cljs (js/parseInt major 10))]
+          minor-version #?(:clj (Integer/parseInt minor 10)
+                           :cljs (js/parseInt minor 10))
+          patch-version #?(:clj (Integer/parseInt patch 10)
+                           :cljs (js/parseInt patch 10))]
       (Version. major-version minor-version patch-version pre-release metadata))))
 
 (defn render
